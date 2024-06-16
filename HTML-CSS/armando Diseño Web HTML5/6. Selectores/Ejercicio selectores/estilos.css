@@ -1,0 +1,26 @@
+body{
+	font-family: sans-serif;
+	padding-left: 2em;
+}
+
+h2{
+	margin-top: 2em;
+}
+
+li{
+	margin-top: .5em;
+}
+
+a{
+	color: deepskyblue;
+}
+
+table{
+	border-collapse: collapse;
+	margin-bottom: 4em;
+}
+
+td{
+	padding: .5em 1em;
+	border: 1px solid whitesmoke;
+}

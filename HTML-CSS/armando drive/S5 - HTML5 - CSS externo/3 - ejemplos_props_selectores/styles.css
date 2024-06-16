@@ -1,0 +1,46 @@
+#tit1 {
+    /* color: blue !important; */
+    /* Color en codigo Hexadecimal: 2 primeros digitos (0-F), ROJO, dos siguientes (0-F), VERDE dos siguientes (0-F) AZUL */
+    /* La prop que aplicará el navegador si está repetida, es la última a no ser de aplicar la clausula !important */
+    color: #338846; 
+    color: #000000;
+    /* lo mismo */
+    color: #000;
+    /* rgb: lo mismo que en Hexadecimal pero con valores 0-255 */
+    color: rgb(255, 0, 0);
+    color: rgba(0, 255, 0, .5);
+    color: #000;
+    opacity: .5;
+    color: #9A436D;
+}
+
+ul {
+    list-style: none;
+   
+}
+
+h3, p {
+    color: #00FF00;
+}
+
+.remarcado {
+    color: #ffff00;
+}
+
+a {
+    color: #ffb413;
+}
+
+/* pseudoclase hover (pasar con encima con el raton) */
+a:hover {
+    background-color: #338846;
+    color: #fff;
+}
+
+#parrafo_azul {
+    color: blue;
+}
+
+#parrafo_azul:hover {
+    color: red;
+}

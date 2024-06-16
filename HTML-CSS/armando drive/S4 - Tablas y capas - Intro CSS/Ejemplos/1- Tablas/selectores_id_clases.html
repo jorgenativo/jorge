@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 3 Tablas</title>
+    <!-- estilos incrustados -->
+    <style>
+        /* quitar margenes de las celdas  */
+        table{
+            border-collapse: collapse;
+        }
+        table, tr, th {
+            border: 2px solid green;        
+        }
+        /* dimensiones cuadradas */
+        tr, th {
+            width: 100px;
+            height: 100px;
+        }
+        /* id elementos con estilos unicos */
+        #titulo1 {
+            color: aquamarine;
+        }
+        /* Las clases son estilos para elementos con estilos comunes */
+        
+
+        .negro {
+            background-color: black;
+            color: white;
+        }
+       
+        
+    </style>
+</head>
+<body>
+   <!-- Tabla con etiquetas especiales HTML5 -->
+   <h1 id="titulo1">Mis celdas</h1>
+   <table>
+        <!-- cabecera -->
+        <thead>
+            <tr>
+                <th>CELDA 1</th>
+                <th class="negro">CELDA 2</th>
+                <th>CELDA 3</th>
+                <th class="negro">CELDA 4</th>
+            </tr>
+        </thead>
+   </table>
+</body>
+</html>

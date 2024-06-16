@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 2 Tablas</title>
+    <!-- estilos incrustados -->
+    <style>
+        body {
+            background-color: orange;
+        }
+        table {
+            text-align: center;
+            background-color: white;
+            border-collapse: collapse;
+            display: inline-block;
+            
+            /* prop margin : eje x / y . Todos los lados */
+            /* margin: 30px auto; 2 valores: 1er valor arriba/abajo, 2o valor izq/der */
+            /* margin: 10px auto 10px auto; agujas del reloj arriba/der/abajo/izq */
+            /* margin: 50px auto; */
+
+        }
+
+        tr,  
+        td {
+            width: 50px;
+            height: 50px;
+        }
+
+        .negro {
+            background-color: black;
+            color: white;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .elem-en-linea{
+            display: inline;
+        }
+        
+
+        #jugador1 {
+            color: red;
+        }
+
+        #jugador2 {
+            color: rgb(96, 228, 228);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1 class="elem-en-linea" >Puntuación</h1>
+    <h3 class="elem-en-linea" id="jugador1">Jugador 1</h3>
+    <table>
+        <tr>
+            <td colspan="8">Pedro</td>
+        </tr>
+        <tr> 
+            <td>Torre</td>
+            <td class="negro">Caballo</td>
+            <td>Alfil</td>
+            <td class="negro">Rey</td>
+            <td>Reina</td>
+            <td class="negro">Alfil</td>
+            <td>Caballo</td>
+            <td class="negro">Torre</td>
+        </tr>
+        <tr>
+            <td class="negro">Peón</td>
+            <td>Peón</td>
+            <td class="negro">Peón</td>
+            <td>Peón</td>
+            <td class="negro">Peón</td>
+            <td>Peón</td>
+            <td class="negro">Peón</td>
+            <td>Peón</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="negro"></td>
+            <td></td>
+            <td class="negro"></td>
+            <td></td>
+            <td class="negro"></td>
+            <td></td>
+            <td class="negro"></td>
+        </tr>
+        <tr>
+            <td class="negro"></td>
+            <td></td>
+            <td class="negro"></td>
+            <td></td>
+            <td class="negro"></td>
+            <td></td>
+            <td class="negro"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="negro"></td>
+            <td></td>
+            <td class="negro"></td>
+            <td></td>
+            <td class="negro"></td>
+            <td></td>
+            <td class="negro"></td>
+        </tr>
+        <tr>
+            <td class="negro"></td>
+            <td></td>
+            <td class="negro"></td>
+            <td></td>
+            <td class="negro"></td>
+            <td></td>
+            <td class="negro"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Peón</td>
+            <td class="negro">Peón</td>
+            <td>Peón</td>
+            <td class="negro">Peón</td>
+            <td>Peón</td>
+            <td class="negro">Peón</td>
+            <td>Peón</td>
+            <td class="negro">Peón</td>     
+        </tr>
+        <tr>
+            <td class="negro">Torre</td>
+            <td>Caballo</td>
+            <td class="negro">Alfil</td>
+            <td>Rey</td>
+            <td class="negro">Reina</td>
+            <td>Alfil</td>
+            <td class="negro">Caballo</td>
+            <td>Torre</td>
+        </tr>
+        <tr>
+            <td colspan="8" class="negro">Paco</td>
+        </tr>
+    </table>
+    <h1 class="elem-en-linea">Puntuación</h1>
+    <h3 class="elem-en-linea" id="jugador2">Jugador 2</h3>
+</body>
+
+</html>

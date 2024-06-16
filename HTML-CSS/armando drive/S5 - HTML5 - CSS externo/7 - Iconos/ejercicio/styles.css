@@ -1,0 +1,64 @@
+/* link a iconos BS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.p-2 {
+    padding: 2%;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* cabecera */
+header {
+    border-bottom: 2px solid green;
+}
+
+header img {
+    /* Ya que la imagen se posiciona en linea, la convierto en bloque para poder centrarla para que tenga la referencia de todo el ancho de la pantalla del navegador */
+    display: block;
+    margin: auto;
+    width: 100px;
+    /* box-shadow: 4 valores
+    1- pos sombra eje x
+    2- pos sombra eje y
+    3- difuminado sombra
+    4- color de sombra */
+    box-shadow: 10px 10px 30px #333;
+}
+
+nav {
+    margin-top: 2%;
+    text-align: center;
+}
+
+header ul {
+    padding: 0;
+}
+
+header li {
+    display: inline;
+}
+
+/* main */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main img {
+    margin: 2%;
+}
+
+/* pie */
+footer {
+    font-size: 22px;
+    text-align: center;
+    border-top: 2px solid green;
+}
+
+footer i {
+    margin: 10px
+}

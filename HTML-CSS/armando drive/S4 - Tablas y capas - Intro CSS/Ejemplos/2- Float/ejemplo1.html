@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 1 Float</title>
+    <!-- estilos incrustados -->
+    <style>
+        #capa1 {
+            width: 50%;
+            height: 100px;
+            background-color: aquamarine;
+            float: left;
+        }
+        #capa2 {
+            width: 50%;
+            height: 100px;
+            background-color: blueviolet;
+            float: right ;
+        }
+
+        #capa3 {
+            width: 100%;
+            height: 100px;
+            background-color: brown;
+             /* romper flotación */
+             clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>2 CAPAS FLOTANTES y 3a CAPA ROMPE FLOTACION</h1>
+    <!-- etiqueta div (etiqueta para crear una caja contenedora) -->
+    <div id="capa1">CAPA 1</div>
+    <div id="capa2">CAPA 2</div>
+    <div id="capa3">CAPA 3</div>
+</body>
+
+</html>

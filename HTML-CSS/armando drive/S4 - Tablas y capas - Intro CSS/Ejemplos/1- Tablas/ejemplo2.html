@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 2 Tablas</title>
+    <!-- estilos incrustados -->
+    <style>
+        /* quitar margenes de las celdas  */
+        table {
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        table,
+        td,
+        tr,
+        th {
+            border: 2px solid green;
+        }
+
+        td,
+        th {
+            /* espacio dentro de su contenedor */
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Tabla con etiquetas especiales HTML5 -->
+    <table>
+        <!-- cabecera -->
+        <thead>
+            <tr>
+                <th>Nombre y Apellidos</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alumno 1</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td></td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td>Alumno 2</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td>Alumno 3</td>
+                <td></td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td>Alumno 4</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+                <td>x</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">Grup Cief 2024</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

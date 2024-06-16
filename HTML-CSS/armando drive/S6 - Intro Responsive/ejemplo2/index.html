@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .caja1 {
+            display: inline-block;
+            width: 49%;
+            padding: 10px;
+            background-color: green;
+        }
+
+        .caja2 {
+            display: inline-block;
+            width: 49%;
+            padding: 10px;
+            background-color: blueviolet;
+        }
+
+        @media all and (max-width: 768px) {
+            .caja1 {
+                width: 100%;
+                display: block;
+            }
+
+            .caja2 {
+                width: 100%;
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedora">
+        <div class="caja1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos laudantium voluptate quas voluptates vero perferendis ad saepe dolorem magnam aspernatur reprehenderit molestiae laboriosam eveniet sint aliquam maxime temporibus, cum nesciunt.</div>
+        <div class="caja2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur odit esse velit excepturi, corporis minus vel consequatur nemo, aliquid sint eius, enim facere iure. Deserunt qui repellat exercitationem repudiandae autem!</div>
+    </div>
+</body>
+</html>

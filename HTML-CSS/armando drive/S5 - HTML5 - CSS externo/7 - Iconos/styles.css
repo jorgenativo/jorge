@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+
+img {
+    width: 100px;
+}
+
+.fa-instagram {
+    font-size: 30px;
+    color: red;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos Flex</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="flex-contenedor flex-contenedor-1">
+        <div>Caja 1</div>
+        <div>Caja 2</div>
+        <div>Caja 3</div>
+        <div>Caja 4</div>
+    </div>
+    <hr>
+    <div class="flex-contenedor flex-contenedor-2">
+        <div>Caja 1</div>
+        <div>Caja 2</div>
+        <div>Caja 3</div>
+        <div>Caja 4</div>
+        <div>Caja 5</div>
+        <div>Caja 6</div>
+        <div>Caja 7</div>
+        <div>Caja 8</div>
+    </div>
+    <hr>
+    <div class="flex-contenedor flex-contenedor-3">
+        <div>Caja 1</div>
+        <div>Caja 2</div>
+        <div>Caja 3</div>
+    </div>
+    <hr>
+    <div class="flex-contenedor flex-contenedor-4">
+        <div>Caja 1</div>
+        <div>Caja 2</div>
+        <div>Caja 3</div>
+        <div>Caja 4</div>
+        <div>Caja 5</div>
+        <div>Caja 6</div>
+        <div>Caja 7</div>
+        <div>Caja 8</div>
+    </div>
+    <hr>
+    <div class="flex-contenedor flex-contenedor-5">
+        <!-- Las 3 props: flex-basis, flex-grow y flex-shrink se aplican por definicion al elemento directo. PREVIAMENTE TENEMOS QUE APLICAR DISPLAY FLEX A SU CAJA CONTENEDORA!! -->
+        <!-- flex-shrink: cuanto de si mismo se hará pequeño cuando no haya espacio suficiente -->
+        <div style="order:1; background-color: red; flex-basis: 100px; flex-grow: 0;">Caja 1</div>
+        <div style="order:2; background-color: blue; flex-basis: 300px;">Caja 2</div>
+        <div style="order:3; background-color: green; flex-basis: 300px;   flex-shrink: 10;">Caja 3</div>
+        <!-- https://developer.mozilla.org/es/docs/Web/CSS/flex-shrink -->
+        <!-- https://developer.mozilla.org/es/docs/Web/CSS/flex-basis -->
+        <!-- https://developer.mozilla.org/es/docs/Web/CSS/flex-grow -->
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 1 Position</title>
+    <!-- estilos incrustados -->
+    <style>
+        #contenedor {
+            margin: auto ;
+            width: 500px;
+            height: 1500px;
+            background-color: silver;
+        }
+        #static {
+            position: static;
+            background-color: grey;
+        }
+
+        #relative {
+            position: relative;
+            top: 150px;
+            left: 150px;
+            background-color: green;
+        }
+
+        #absolute {
+            position: absolute;
+            top: 150px;
+            left:150px;
+            background-color: red;
+        }
+
+        #fixed {
+            position: fixed;
+            top: 80px;
+            left: 90px;
+            background-color: blue;
+        }
+
+        #sticky {
+            position: sticky;
+            top: 500px;
+            width: 200px;
+            height: 150px; 
+            background-color: orange;
+        }
+
+        .caja {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor">
+        <!-- Valor que toma un elemento para posicionarse respetando el flujo normal de la página -->
+        <div id="static" class="caja">Pos. Estático</div>
+        <!-- Valor que toma un elemento para posicionarse respetando el flujo normal de la página con la opcion de COORD. TOP/BOTTOM/LEFT/RIGHT -->
+        <div id="relative" class="caja">Pos. Relativo</div>
+        <!-- Posicionamiento fija respecto a la ventana del navegador, con la opcion de COORD. TOP/BOTTOM/LEFT/RIGHT -->
+        <div id="absolute" class="caja">Pos. Absolute</div>
+        <!-- Igual que el pos. absoluto pero sin respetar el flujo normal de la pag -->
+        <div id="fixed" class="caja">Pos. Fixed</div>
+        <!-- Igual que el pos. relativo hasta que alcanza el valor del umbral del desplazamiento -->
+        <div id="sticky">Pos. Sticky</div>
+    </div>
+</body>
+
+</html>

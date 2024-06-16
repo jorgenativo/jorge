@@ -1,0 +1,12 @@
+/* Selector universal (seleccionar todos los elementos) */
+/* Tambien llamado reset */
+* {
+    margin: 0;
+    /* no afecta el ancho del padding y de los border a los elementos */
+    box-sizing: border-box;
+}
+
+header {
+    margin: 10px;
+    border: 1px red solid;
+} 
