@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    justify-content: space-between;
+}
+.targeta{
+    height: 300px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.nomSuper{
+    height: 70px;
+    background-color: aqua;
+
+}
+
+.poders{
+    height: 230px;
+    background-color: bisque;
+}
