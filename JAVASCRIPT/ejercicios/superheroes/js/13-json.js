@@ -1,14 +1,3 @@
-// function recuperaInfo(){
-//     fetch("./JSON/superheroes.json")
-//     .then((response) => response.json())
-//     .then((data) => {
-//         return sessionStorage.setItem("dades",data);
-//     })
-//     .catch((error) => {
-//         console.error("Error al llegir l'arxiu JSON: ", error);
-//     })
-// }
-
 function nomHeroi(i){
     fetch("./JSON/superheroes.json")
     .then((response) => response.json())
@@ -24,45 +13,44 @@ function nomHeroi(i){
 function llistaHerois(){
     fetch("./JSON/superheroes.json")
     .then((response) => response.json())
-    .then((data) => {
-        console.log(data.members[0].powers);
-
-        document.getElementById("super1").innerText = data.members[0].name;
-        document.getElementById("power1").innerText = data.members[0].powers;
-
-        document.getElementById("super2").innerText = data.members[1].name;
-        document.getElementById("power2").innerText = data.members[1].powers;
-
-        document.getElementById("super3").innerText = data.members[2].name;
-        document.getElementById("power3").innerText = data.members[2].powers;
-
-        novaTargeta(data);
-
-        //data.members.forEach(element => {
-            //console.log(element.name);
-            //document.write("<br>"+element.name);
-            //document.getElementById("noms").innerHTML+=element.name+'<br>';
-        //});
+    .then((data) => {        
+        data.members.forEach(element => {novaTargeta(element);});
     })
     .catch((error) => {
         console.error("Error al llegir l'arxiu JSON: ", error);
     })
 }
 
-function novaTargeta(data){
+function novaTargeta(element){
     // Creació nova targeta
-    var novaTargeta = document.createElement("div");
+    let novaTargeta = document.createElement("div");
     novaTargeta.className+= "targeta";
     
-    var nouSuper = document.createElement("div");
-    nouSuper.className+= "nomSuper";
-    var nouTextSuper = document.createTextNode(data.members[0].name);
-    nouSuper.appendChild(nouTextSuper); // afegeix el nom del superheroi.
-    novaTargeta.appendChild(nouSuper);
+    // DIV del títol
+    let nouHeroi = document.createElement("div");
+    nouHeroi.className+= "heroi";
     
-    console.log(nouSuper);
+    // let nouTextHeroi = document.createTextNode(element.name);
+    nouHeroi.appendChild(document.createTextNode(element.name)); // afegeix el nom del superheroi.
+    novaTargeta.appendChild(nouHeroi);
+    
+    // DIV d'habilitats
+    novaTargeta.appendChild(afegeixHabilitats(element.powers));
 
+    // Afegeix al final
+    const list = document.getElementById("contenidor");
+    list.insertBefore(novaTargeta, list.lastChild);
+}
 
-    var currentDiv = document.getElementById("info");
-    document.body.insertBefore(novaTargeta, currentDiv);
+// Funció que afegeix les habilitats d'un heroi
+function afegeixHabilitats(poders){
+    let nouHabilitats = document.createElement("div");
+    nouHabilitats.className+= "poders";
+    
+    poders.forEach(poder => {
+        //let nouTextHabilitats = document.createTextNode(poder);
+        nouHabilitats.appendChild(document.createTextNode(poder)); // afegeix el nom d'habilitats.
+        nouHabilitats.appendChild(document.createElement("br")); // afegeix un salt de línia
+    });
+    return nouHabilitats;
 }

@@ -24,29 +24,9 @@ function listaHeroes(){
 
       document.getElementById("super3").innerText = data.members[2].name;
       document.getElementById("poder3").innerText = data.members[2].powers;
-
-      novaTargeta(data);
-
-        })
+      
+      })
   .catch((error) => {
       console.error("Error al llegir l'arxiu JSON: ", error);
   })
-}
-
-function novaTargeta(data){
-  // Creació nova targeta
-  var novaTargeta = document.createElement("div");
-  novaTargeta.className+= "tarjeta";
-  
-  var nouSuper = document.createElement("div");
-  nouSuper.className+= "nomSuper";
-  var nouTextSuper = document.createTextNode(data.members[0].name);
-  nouSuper.appendChild(nouTextSuper); // afegeix el nom del superheroi.
-  novaTargeta.appendChild(nouSuper);
-  
-  console.log(nouSuper);
-
-
-  var currentDiv = document.getElementById("info");
-  document.body.insertBefore(novaTargeta, currentDiv);
 }
